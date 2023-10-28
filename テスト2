@@ -1,0 +1,12 @@
+import openpyxl
+
+# 新規ファイルの作成
+workbook = openpyxl.Workbook()
+
+sheet = workbook.active
+
+# セルに値を設定
+sheet['A1'].value = 'Hello, World!'
+
+# ファイルを別名保存
+workbook.save('sample3.xlsx')
